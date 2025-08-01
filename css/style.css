@@ -61,10 +61,11 @@ html {
   text-align: center;
   background: #867ae9;
   width: 100%;
-  height: 94%;
-  overflow: hidden;
+  min-height: 100vh; /* agar tinggi menyesuaikan */
+  padding-bottom: 40px;
   position: relative;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
+  overflow-y: auto; /* biar bisa discroll kalau gambar tinggi */
 }
 
 .dalemnya_halaman {
@@ -275,16 +276,15 @@ section.after {
 }
 
 .gambar {
-  display: block;
-  max-width: 90%;
-  max-height: 400px; /* Batasi tinggi maksimal biar gak kepanjangan */
+  width: 90%;
+  max-width: 500px;
   height: auto;
   margin: 0 auto;
+  display: block;
   border-radius: 10px;
-  object-fit: contain;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* opsional, buat efek glowing lembut */
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
 /*Animasi Bekgron*/
 @keyframes animasiBegron {
   0% {
