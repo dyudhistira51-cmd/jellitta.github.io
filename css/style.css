@@ -275,11 +275,37 @@ section.after {
   -webkit-transition-delay: 0.15s;
 }
 
+.kontener2 {
+  padding: 20px;
+  text-align: center;
+  margin-top: 17%;
+  z-index: 10;
+  position: relative;
+}
+
+.tombol {
+  padding: 10px 30px;
+  background: transparent;
+  color: #BCCFD7;
+  border: 2px solid #BCCFD7;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.tombol:hover {
+  background: #BCCFD7;
+  color: white;
+}
+
 .gambar {
   width: 90%;
   max-width: 500px;
   height: auto;
-  margin: 0 auto;
+  margin: 20px auto;
   display: block;
   border-radius: 10px;
   object-fit: cover;
