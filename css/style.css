@@ -274,6 +274,17 @@ section.after {
   -webkit-transition-delay: 0.15s;
 }
 
+.gambar {
+  display: block;
+  max-width: 90%;
+  max-height: 400px; /* Batasi tinggi maksimal biar gak kepanjangan */
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* opsional, buat efek glowing lembut */
+}
+
 /*Animasi Bekgron*/
 @keyframes animasiBegron {
   0% {
